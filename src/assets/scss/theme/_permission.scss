@@ -1,0 +1,85 @@
+.permissionBlock{
+    margin: 0 -15px;
+  }
+  .roleAcessList{
+    border-right: 1px solid $dark-border-100;
+    background-color: $dark-body-background;
+    color: $theme-body-font-color;
+    .addRole{
+      background-color: $primary-color;
+      width: 26px;
+      height: 26px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+      i{
+        color: #fff;
+      }
+    }
+    .permissionHead{
+      padding: 15px;
+    }
+    .roleAcessListWrap{
+      padding: 10px;
+      border-top: 1px solid $dark-border-100;
+      li{
+        a{
+          color: $theme-body-font-color;
+          border-bottom: 1px solid $dark-border-100;
+          font-size: 14px;
+          padding: 8px;
+          display: block;
+          border-right: 3px;
+          cursor: pointer;
+          &.active{
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .permissionItemHead{
+    color: $theme-body-font-color;
+    padding: 15px 40px 15px 15px;
+    font-size: 16px;
+    border-bottom: 1px solid $dark-border-100;
+    background-color: $outline-hover;
+    .permissionAction{
+      width: 420px;
+      display: block;
+    }
+  }
+  .permissionDetailWrap{
+    .checkbox{
+      label{
+        padding-left: 10px;
+        &::before{
+          top: 4px;
+        }
+      }
+    } 
+    .permissionDetilaInner{
+      .permissionDetailItem{
+        padding: 16px 10px;
+        border-bottom: 1px solid $dark-border-100;
+        .permission{
+          margin-right: 20px;
+        }
+      }
+      .modelList{
+        color: $theme-body-font-color;
+        font-size: 14px;
+      }
+      .permissionCRUD{
+        width: 420px;
+      }
+    }
+  }
+  .roleAccessHead{
+    color: $theme-body-font-color;
+    padding: 10px 15px;
+  }
+  
