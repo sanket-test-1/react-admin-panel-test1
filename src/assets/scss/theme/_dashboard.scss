@@ -1,0 +1,89 @@
+.dashboardWrap{
+	margin: 0 -15px;
+	padding: 10px 10px;
+	.react-grid-item{
+		height: auto !important;
+		position: relative !important;
+		transform: translate(0, 0) !important;
+	}
+	.tableWrapFilter{
+		height: 200px;
+	}
+}
+
+.dashboardRow{
+	width: 100% !important;
+	.dashboardTable{
+		// width: 50%;
+		padding: 10px;
+		.dashboard-Card{
+			background-color: $dark-card-background;
+			border: 1px solid $dark-border-100;
+			color: $theme-body-font-color;
+			padding: 16px;
+    	border-radius: 10px;
+			.page-header{
+				padding-top: 0 !important;
+			}
+			svg{
+				text{
+					fill: $theme-body-font-color;
+				}
+			}
+		}
+	}
+}
+
+.w-6-12{
+	width: 50%;
+}
+.w-3-12{
+	width: 25%;
+}
+.countBox{
+	text-align: center;
+	.countName{
+		font-size: 32px;
+		font-weight: bold;
+		color: $theme-body-font-color;
+	}
+	.countLable{
+		text-transform: uppercase;
+		font-size: 20px;
+		color: $theme-body-font-color;
+		font-weight: 600;
+	}
+}
+.pichartTitle{
+	font-size: 24px;
+	font-weight: bold;
+}
+.noDataOption{
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 10px;
+	min-height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dashboardNoData{
+	height: 100%;
+	overflow: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dashboardNoData span{
+	color: $theme-body-font-color;
+	font-size: 20px;
+}
+.w-12-12{
+	width: 100%;
+}
+.w-3-12{
+	width: 25%;
+}
+.w-6-12{
+	width: 50%;
+}

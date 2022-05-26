@@ -1,0 +1,251 @@
+{
+  "name": "user",
+  "allowAdd": true,
+  "allowEdit": true,
+  "allowDelete": true,
+  "allowView": true,
+  "attributes": [
+    {
+      "attrName": "_id",
+      "type": "String"
+    },
+    {
+      "attrName": "username",
+      "type": "String"
+    },
+    {
+      "attrName": "password",
+      "type": "String"
+    },
+    {
+      "attrName": "email",
+      "type": "String"
+    },
+    {
+      "attrName": "name",
+      "type": "String"
+    },
+    {
+      "attrName": "userType",
+      "type": "Number",
+      "enum": {
+        "User": 1,
+        "Admin": 2
+      }
+    },
+    {
+      "attrName": "isActive",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "isDeleted",
+      "type": "Boolean"
+    },
+    {
+      "attrName": "createdAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "updatedAt",
+      "type": "Date"
+    },
+    {
+      "attrName": "addedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    },
+    {
+      "attrName": "updatedBy",
+      "type": "ObjectId",
+      "ref": "user"
+    }
+  ],
+  "screenLayout": {
+    "singlePageForm": "threeLine",
+    "listing": {
+      "name": "Table layout",
+      "description": "Select properties you want to manage for tables on react theme page listing.",
+      "config": {
+        "paginate": true,
+        "limitSetup": 10,
+        "dataCount": true,
+        "search": true,
+        "sorting": true,
+        "optionToEnable": true,
+        "rowSelection": true
+      }
+    },
+    "loader": "lazyLoading"
+  },
+  "actions": [
+    {
+      "category": "addEdit",
+      "attributes": [
+        {
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 0
+        },
+        {
+          "attrName": "password",
+          "label": "Password",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 1
+        },
+        {
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 2
+        },
+        {
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "type": "String",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 3
+        },
+        {
+          "attrName": "userType",
+          "label": "User Type",
+          "inputType": "SelectWidget",
+          "type": "Number",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "sequence": 4,
+          "enum": {
+            "User": 1,
+            "Admin": 2
+          }
+        }
+      ]
+    },
+    {
+      "category": "listing",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "password",
+          "label": "Password",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "Number",
+          "attrName": "userType",
+          "label": "User Type",
+          "inputType": "SelectWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "enum": {
+            "User": 1,
+            "Admin": 2
+          }
+        }
+      ]
+    },
+    {
+      "category": "detailView",
+      "attributes": [
+        {
+          "type": "String",
+          "attrName": "username",
+          "label": "Username",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "password",
+          "label": "Password",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "email",
+          "label": "Email",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "String",
+          "attrName": "name",
+          "label": "Name",
+          "inputType": "InputWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true
+        },
+        {
+          "type": "Number",
+          "attrName": "userType",
+          "label": "User Type",
+          "inputType": "SelectWidget",
+          "noEdit": false,
+          "search": true,
+          "sorting": true,
+          "enum": {
+            "User": 1,
+            "Admin": 2
+          }
+        }
+      ]
+    }
+  ],
+  "allowSoftDelete": true,
+  "allowHardDelete": true
+}
